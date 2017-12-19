@@ -2,6 +2,7 @@ set fileencodings=utf-8,cp932,euc-jp,iso-2022-jp
 set nobackup
 set nowritebackup
 set noswapfile
+set noundofile
 set shortmess+=I
 set clipboard=unnamed
 set hlsearch
@@ -32,7 +33,7 @@ endif
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
 
-  let g:rc_dir    = expand('~/.vim')
+  let g:rc_dir    = expand('~/dotfiles/.vim')
   let s:toml      = g:rc_dir . '/dein.toml'
   let s:lazy_toml = g:rc_dir . '/dein_lazy.toml'
 
