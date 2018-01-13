@@ -7,12 +7,12 @@ set shortmess+=I
 set clipboard=unnamed
 set hlsearch
 set imdisable
-set laststatus=2
 
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 let mapleader = ","
 
 if v:version < 740
+    syntax enable
     finish
 endif
 
@@ -51,6 +51,5 @@ if dein#check_install()
   call dein#install()
 endif
 
-
-colorscheme koehler
+colorscheme pablo
 syntax enable
