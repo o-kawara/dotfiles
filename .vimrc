@@ -7,6 +7,7 @@ set shortmess+=I
 set clipboard=unnamed
 set hlsearch
 set imdisable
+" set ambiwidth=single
 
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 let mapleader = ","
@@ -50,6 +51,7 @@ endif
 if dein#check_install()
   call dein#install()
 endif
+
 
 colorscheme pablo
 syntax enable
