@@ -41,3 +41,9 @@ repo = 'Shougo/context_filetype.vim'
 [[plugins]] # toml syntax
 repo = 'cespare/vim-toml'
 on_ft = 'toml'
+
+[[plugins]] # markdown
+repo = 'kannokanno/previm'
+hook_add = '''
+	let g:previm_open_cmd = 'open -a "Google Chrome"'
+'''

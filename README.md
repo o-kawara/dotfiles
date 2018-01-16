@@ -1,12 +1,14 @@
 # Dot files
-.vimrc
-.gvimrc
+- .vimrc
+- .gvimrc
 
+## Plugins
 - Vim
- - dein
-  - neocomplete
-  - lightline
-  - vim-precious
-  - context_filetype
-  - vim-toml
+    - dein
+        - neocomplete
+        - lightline
+        - vim-precious
+        - context_filetype
+        - vim-toml
+        - Previm
 
