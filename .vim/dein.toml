@@ -38,7 +38,7 @@ repo = 'Shougo/context_filetype.vim'
 repo = 'cespare/vim-toml'
 on_ft = 'toml'
 
-[[plugins]] # markdown
+[[plugins]] # markdown preview
 repo = 'kannokanno/previm'
 hook_add = '''
 	let g:previm_open_cmd = 'open -a "Google Chrome"'
@@ -52,3 +52,5 @@ hook_add = '''
 [[plugins]] # webapi
 repo = 'mattn/webapi-vim'
 
+[[plugins]] # git
+repo = 'lambdalisue/vim-gita'

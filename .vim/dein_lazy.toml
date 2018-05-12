@@ -25,5 +25,3 @@ hook_add = '''
     endif
 '''
 
-[[plugins]]
-repo = 'lambdalisue/vim-gita'

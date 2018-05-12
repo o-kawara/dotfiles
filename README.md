@@ -5,15 +5,14 @@
 ## Plugins
 - Vim
     - dein
-        " - neocomplete
         - lightline
-	" - NERDTree
-	- Vaffle
+        - Vaffle
         - vim-precious
         - context_filetype
         - vim-toml
         - Previm
+        - gina
     - dein_lazy
     	- vim-flake8
-	- jedi-vim
+        - jedi-vim
 
