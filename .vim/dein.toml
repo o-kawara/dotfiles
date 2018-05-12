@@ -1,34 +1,30 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
-[[plugins]]
-repo = 'Shougo/neocomplete.vim'
-
-[[plugins]] # Color Scheme
+[[plugins]] # color scheme
 repo = 'w0ng/vim-hybrid'
 hook_add = '''
   set background=dark
 '''
 
-[[plugins]]
-repo = 'cocopon/vaffle.vim'
+[[plugins]] # color scheme
+repo = 'tomasr/molokai'
 
 [[plugins]]
-repo = 'davidhalter/jedi-vim'
-on_ft = 'python'
+repo = 'cocopon/vaffle.vim'
 
 [[plugins]] # ステータスバーのカラー設定
 repo = 'itchyny/lightline.vim'
 hook_add = '''
 	let g:lightline = {
 	    \ 'component': {
-	    \   'readonly': '%{&readonly?"":""}',
+            \   'readonly': '%{&readonly?"":""}',
 	    \ },
 	    \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2"},
 	    \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" },
 	    \ }
 	set laststatus=2
-	set noshowmode
+	" set noshowmode
 '''
 
 [[plugins]] # カーソル位置のコンテキストに合わせてftを切り替える
@@ -46,4 +42,13 @@ on_ft = 'toml'
 repo = 'kannokanno/previm'
 hook_add = '''
 	let g:previm_open_cmd = 'open -a "Google Chrome"'
+
+	augroup PrevimSettings
+	    autocmd!
+	    autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
+	augroup END
 '''
+
+[[plugins]] # webapi
+repo = 'mattn/webapi-vim'
+

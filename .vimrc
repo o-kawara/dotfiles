@@ -7,15 +7,34 @@ set shortmess+=I
 set clipboard=unnamed
 set hlsearch
 set imdisable
-" set ambiwidth=single
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set autoindent
+set smartindent
 
-nmap <Esc><Esc> :nohlsearch<CR><Esc>
+augroup fileTypeIndent
+    autocmd!
+    autocmd BufNewFile,BufRead *.py setlocal tabstop=4 softtabstop=4 shiftwidth=4
+    autocmd BufNewFile,BufRead *.rb setlocal tabstop=2 softtabstop=2 shiftwidth=2
+    autocmd BufNewFile,BufRead *.yml setlocal tabstop=2 softtabstop=2 shiftwidth=2
+    autocmd BufNewFile,BufRead *.yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
+augroup END
+
 let mapleader = ","
+nmap <Esc><Esc> :nohlsearch<CR><Esc>
+noremap <S-h>   ^
+noremap <S-j>   }
+noremap <S-k>   {
+noremap <S-l>   $
 
+" macOS標準vimではプラグインを使わない
 if v:version < 740
     syntax enable
     finish
 endif
+
 
 " プラグインが実際にインストールされるディレクトリ
 let s:dein_dir = expand('~/.cache/dein')
@@ -51,7 +70,6 @@ endif
 if dein#check_install()
   call dein#install()
 endif
-
 
 colorscheme pablo
 syntax enable
