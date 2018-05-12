@@ -53,4 +53,4 @@ hook_add = '''
 repo = 'mattn/webapi-vim'
 
 [[plugins]] # git
-repo = 'lambdalisue/vim-gita'
+repo = 'lambdalisue/gina.vim'
