@@ -1,18 +1,15 @@
 # Dot files
+- .bashrc
+- .bash_profile
+- .hyper.js
 - .vimrc
 - .gvimrc
 
-## Plugins
-- Vim
-    - dein
-        - lightline
-        - Vaffle
-        - vim-precious
-        - context_filetype
-        - vim-toml
-        - Previm
-        - gina
-    - dein_lazy
-    	- vim-flake8
-        - jedi-vim
+## Vim Plugins
+- .vim
+    - dein.toml
+    - dein_lazy.toml
 
+# Setup script
+- install.sh
+- mklink.bat
