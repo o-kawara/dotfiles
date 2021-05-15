@@ -38,6 +38,13 @@ repo = 'Shougo/context_filetype.vim'
 repo = 'cespare/vim-toml'
 on_ft = 'toml'
 
+[[plugins]] # markdown syntax
+repo = 'plasticboy/vim-markdown'
+on_ft = 'markdown'
+# hook_add = '''
+#     let g:vim_markdown_folding_disabled = 1
+# '''
+
 [[plugins]] # markdown preview
 repo = 'kannokanno/previm'
 hook_add = '''
@@ -54,3 +61,7 @@ repo = 'mattn/webapi-vim'
 
 [[plugins]] # git
 repo = 'lambdalisue/gina.vim'
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+
